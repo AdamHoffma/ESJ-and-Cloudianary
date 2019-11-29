@@ -1,12 +1,12 @@
 <html lang="en">
 <head>
-    <% include ../partials/head %>
+    <%- include ../partials/head %>
 </head>
 <body class="contatiner">
 <header>
-    <% include ../partials/header%>
+    <%- include .partials/header %>
     <h3 class="ui center aligned icon header">
-        Edit: <%= post.title %>
+        New Post
     </h3>
 </header>
 <main>
@@ -47,6 +47,6 @@
         </div>
     </div>
 </main>
-<% include ../partials/scripts %>
+<%- include .partials/scripts %>
 </body>
 </html>

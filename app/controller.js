@@ -41,7 +41,7 @@ module.exports = {
     index: function (req, res) {
         Model.find({}, function (err, posts) {
             if(err) res.send(err)
-            res.render(pages/index, {posts: posts})
+            res.render('pages/index', {posts: posts})
         })
     },
     destroy: function (req, res) {
