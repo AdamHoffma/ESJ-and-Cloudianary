@@ -1,0 +1,28 @@
+{
+  "name": "ESJ-and-Cloudianary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamHoffma/ESJ-and-Cloudianary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdamHoffma/ESJ-and-Cloudianary/issues"
+  },
+  "homepage": "https://github.com/AdamHoffma/ESJ-and-Cloudianary#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.17.0",
+    "connect-multiparty": "^2.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.12"
+  }
+}
