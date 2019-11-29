@@ -17,7 +17,7 @@ module.exports = {
     create: function (req, res) {
         // Use Cloudinary uploader to upload to cloudinary server
         // Access files uploaded from the browser using req.files
-        cloudinary.v2.uploader.upload(req.files.images.path, {tags: req.body.tags}, function(result) {
+        cloudinary.v2.uploader.upload(req.files.image.path, {tags: req.body.tags}, function(result) {
             // Create a post model
             // by assembling data as object and passing to Model instance
         var post = new Model({
@@ -25,7 +25,7 @@ module.exports = {
             description: req.body.description,
             created_at: new Date(),
             // store the url in a DB for future use
-            image: req.body.image,
+            image: result.url,
             image_id: result.public_id
         })
         // persist by saving

@@ -1,14 +1,14 @@
 
 <html lang="en">
     <head>
-        <% include ../partials/head %>
+        <% include ('../partials/head') %>
     </head>
     <body class="container">
     
     <header>
-        <% include ../partials/header %>
+        <% include ('../partials/header') %>
     </header>
-    
+    <%= console.log('posts', posts) %>
     <main>
         <div class="ui grid container">
             <div class="ui three column centered grid">
@@ -50,6 +50,6 @@
             </div>
         </div>
     
-    <% include ../partials/scripts %>
+    <% include ('../partials/scripts') %>
     </body>
     </html>
